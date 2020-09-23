@@ -3,7 +3,7 @@
   <h2 class="mb-4">Restaurant list</h2>
 
   <div class="card-description">
-    <div class="col-xs-12 col-sm-6 p-3" style="background-color: rgba(0,0,0,0.1);">
+    <div class="col-xs-12 col-sm-6 p-3" style="background-color: rgb(255,255,255);">
       <% @restaurants.each do |restaurant| %>
         <p><strong><%= link_to restaurant.name, restaurant_path(restaurant) %></strong></p>
         <p><%= restaurant.address %></p>
