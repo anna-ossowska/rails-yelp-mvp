@@ -1,2 +1,14 @@
-<h1>Reviews#new</h1>
-<p>Find me in app/views/reviews/new.html.erb</p>
+<div class="container m-5">
+
+  <h2 class="mb-4">New Review</h2>
+
+  <%= simple_form_for ([@restaurant, @review]) do |f| %>
+    <%= f.input :content %>
+    <%= f.input :rating, as: :select, collection: 1..5 %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+
+  <br>
+
+</div>
+
